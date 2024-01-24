@@ -1,45 +1,44 @@
-#logo img {
-  width: 20vw;
+header {
+  text-align: center;
+}
+body {
+  margin: 0;
 }
 #frontespizio {
   border-top: 1px solid yellow;
   background-color: #fdfbf1;
-  text-align: center;
   color: #107777;
   padding: 10px;
 }
-span {
-  font-weight: bold;
-}
-
-main {
-  width: 50%;
-  margin: 0 auto;
-}
-h1{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 1.5em;
-}
-figcaption{
-    text-align: center;
-    color: gray;
-    padding: 5px;
-}
-video{
-    width: 750px;
-    border-radius: 1em;
-    box-shadow:5px 10px 3px grey;
-
-}
-.feature{
-    line-height: 0;
-    border-left: 2px solid rgba(185, 10, 10, 0.778);
-    
-
-
-}
-.feature p{
+#frontespizio b{
     text-transform: uppercase;
-    color: red;
+}
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2.3em;
+  
+}
+figcaption {
+  text-align: center;
+  color: gray;
+  padding: 5px;
+}
+video {
+  width: 750px;
+  border-radius: 1em;
+  box-shadow: 5px 10px 3px grey;
+}
+.feature {
+  line-height: 0;
+  border-left: 2px solid rgba(185, 10, 10, 0.778);
+}
+.feature p {
+  text-transform: uppercase;
+  color: red;
 }
