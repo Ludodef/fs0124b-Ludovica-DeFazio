@@ -35,10 +35,14 @@ video {
   box-shadow: 5px 10px 3px grey;
 }
 .feature {
-  line-height: 0;
+  line-height: 1;
   border-left: 2px solid rgba(185, 10, 10, 0.778);
+  padding: left 10px; ;
 }
 .feature p {
   text-transform: uppercase;
   color: red;
+}
+.ricetta{
+    border-bottom:1px solid skyblue;
 }
