@@ -1,48 +1,50 @@
 /* IMPOSTAZIONI GENERALI */
-#container{
-    background-image: url(../img/sfondo.png);
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    background-position: top;
-    
-}
-body{
-    margin: 10px;
-}
-/* HEADER */
-#menu{
-    text-align: center;
-    background-color:#008aac ;
-    margin: 10px 5px 10px 5px;
-    text-transform: uppercase;
-    color: white;
-    
-    
-}
-#menu img{
-    width: 70%;
+body {
+  background-image: url(../img/sfondo.png);
+  font-family: "Poppins", sans-serif;
+  margin: 15px;
 }
 
+/* HEADER */
+#menu {
+  text-align: center;
+  background-color: #008aac;
+  margin-top: 15px;
+  padding: 30px 0;
+  text-transform: uppercase;
+  color: white;
+}
+#menu img {
+  width: 180px;
+  margin-bottom: 20px;
+
+}
+.claim{
+    margin-bottom: 20px;
+}
+#inizio a {
+  color: white;
+  text-decoration: none;
+}
 
 /* MAIN */
-#articolo{
-    background-color: white;
-    margin: 10px 5px 10px 5px;
+#articolo {
+  background-color: white;
+  margin-top: 15px;
+  padding: 30px 0;
 }
-h1{
-    text-align:left;
-    font-size: 30px;
-    font-weight: bolder;
-    margin: 15px;
-    line-height:150%;
+h1 {
+  text-align: left;
+  font-size: 30px;
+  font-weight: bolder;
+  margin: 15px;
+  line-height: 150%;
 }
-#articolo p{
-    padding: 10px;
-    font-size: 20px;
-    line-height: 100%;
+#articolo p {
+  padding: 10px;
+  font-size: 20px;
+  line-height: 100%;
 }
-
-
 
 /* TABELLE */
 
@@ -51,6 +53,7 @@ h1{
 /* ELEMENTI NELL' ASIDE */
 
 /* FOOTER */
-footer{
-    background-color:#008aac ;
-}  
+footer {
+  background-color: #008aac;
+  margin: 30px 15px 0 15px ;
+}
