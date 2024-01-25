@@ -13,13 +13,16 @@ body{
 #menu{
     text-align: center;
     background-color:#008aac ;
-    padding: 10px 5px 10px 5px;
+    margin: 10px 5px 10px 5px;
+    text-transform: uppercase;
+    color: white;
+    
     
 }
-header{
-    color: white;
-    text-decoration: none;
+#menu img{
+    width: 70%;
 }
+
 
 /* MAIN */
 #articolo{
@@ -33,8 +36,13 @@ h1{
     margin: 15px;
     line-height:150%;
 }
+#articolo p{
+    padding: 10px;
+    font-size: 20px;
+    line-height: 100%;
+}
 
-/* ELEMENTI NEL MAIN - ARTICLE */
+
 
 /* TABELLE */
 
@@ -45,4 +53,4 @@ h1{
 /* FOOTER */
 footer{
     background-color:#008aac ;
-    
+}  
