@@ -47,6 +47,7 @@ body{
 .button a{
     text-decoration: none;
     color: white;
+    font-weight: bolder;
 }
 
 /*main*/
@@ -87,7 +88,7 @@ h1, h3{
 #nome{
     font-size: 1.5rem;
 }
-
+/*aside*/
 .seconda-parte{
     margin: 50px 20px;
 }
@@ -121,14 +122,33 @@ h1, h3{
 #footer{
     color: #c8e7f0;
     background-color:#25a2c3 ;
+    text-align: center;
+    padding: 40px 0;
 }
 #footer h2{
     color: white;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
+    font-size: 2.5rem;
 
 }
-#footer a{
+#footer li,a{
     color: #c8e7f0;
+    font-family: 'Open Sans', sans-serif;
+    ;
+}
+
+
+.copyright{
     
+    padding: 30px 10px;
+    ;
+}
+.copyright p {
+    margin-top: 30px;
+}
+hr{
+    align:center;
+    color: white;
+    width: 50%;
 }
