@@ -21,8 +21,8 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const myName = 'Ludovica'
-console.log(myName)
+const myName = 'Ludovica' ;
+console.log(myName);
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
@@ -32,7 +32,7 @@ console.log(myName)
 let numero1 = 12;
 let numero2 = 20;
 let numero3 = numero1 + numero2;
-console.log( numero3);
+console.log(numero3);
 
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
@@ -45,16 +45,17 @@ let x = 12;
   Riassegna un nuovo valore alla variabile "myName" già esistente: il tuo cognome.
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
-myName = 'De Fazio';
-console.log(myName);
+/*myName = "De Fazio";
+console.log(myName);*/
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* In questo caso, nell'esecizio numero 2 ho sostituito la variabile let a const(potete vedere ciò che ho fatto aprendo i commit dell'esercizio). Ora se osservate dalla console del browser vi appare un errore,questo accade perchè const non può essere riassegnato quando non sono oggetti */
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
-console.log(4-x)
+
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log(4 - x);
 
 /* ESERCIZIO 7
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
@@ -63,3 +64,10 @@ console.log(4-x)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let name1 = 'john';
+let name2 = 'John';
+
+console.log ( name1 == name2 ); //false
+
+name2 = name1.toLowerCase()
+console.log(name1 == name2)
