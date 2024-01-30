@@ -89,7 +89,7 @@ let speseSpedizione = 10;
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let scontoBlack = 20;
+
 {
   if ((totalShoppingCart * 20) / 100 > 50) {
     console.log(
@@ -163,10 +163,10 @@ let scontoBlack = 20;
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let val = 7;
-if (val < 10) {
-  console.log("Meno di 10");
-} else if (val > 5) {
-  console.log("più di 5");
+if (val < 5 {
+  console.log("Meno di 5");
+} else if (val < 10) {
+  console.log("più di 10");
 } else {
   console.log("Uguale a 10 o minore");
 }
