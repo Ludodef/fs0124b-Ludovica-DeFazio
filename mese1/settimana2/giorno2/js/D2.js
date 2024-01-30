@@ -22,7 +22,9 @@
 {
   let numero1 = 6;
 
-  if (numero1 !== 5) console.log("not equal");
+  if (numero1 !== 5) {
+    console.log("not equal");
+  }
 }
 
 /* ESERCIZIO 3
@@ -87,12 +89,18 @@ let speseSpedizione = 10;
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let scontoBlack =20 
+let scontoBlack = 20;
 {
-  if (totalShoppingCart * 20 / 100 > 50){
-    console.log( 'la spedizione è gratuita , il totale è ' , totalShoppingCart * 20 / 100)
-  }else {
-    console.log( 'addebbito costi spedizione ', totalShoppingCart * 20 / 100 + speseSpedizione)
+  if ((totalShoppingCart * 20) / 100 > 50) {
+    console.log(
+      "la spedizione è gratuita , il totale è ",
+      (totalShoppingCart * 20) / 100
+    );
+  } else {
+    console.log(
+      "addebbito costi spedizione ",
+      (totalShoppingCart * 20) / 100 + speseSpedizione
+    );
   }
 }
 
@@ -104,10 +112,9 @@ let scontoBlack =20
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 {
-  let numero1 = 14
-  let numero2 = 5
-  let numero3 = 1
-
+  let numero1 = 14;
+  let numero2 = 5;
+  let numero3 = 1;
 }
 
 /* ESERCIZIO 8
@@ -116,13 +123,13 @@ let scontoBlack =20
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 {
-  let numero1 = 4 
+  let numero1 = 4;
 
   {
-    if (typeof numero1 === 'number') {
-      console.log('il valore è un numero' )  
-    }else {
-      console.log('il valore non è un numero')
+    if (typeof numero1 === "number") {
+      console.log("il valore è un numero");
+    } else {
+      console.log("il valore non è un numero");
     }
   }
 }
@@ -131,18 +138,16 @@ let scontoBlack =20
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-
-
 /* SCRIVI QUI LA TUA RISPOSTA */
 {
-  let numero = 5 
- 
-  if(numero % 2 === 0){
-    console.log('il numero è pari')
-  } else{
-    console.log('il numero è dispari')
-    }
+  let numero = 5;
+
+  if (numero % 2 === 0) {
+    console.log("il numero è pari");
+  } else {
+    console.log("il numero è dispari");
   }
+}
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -157,14 +162,14 @@ let scontoBlack =20
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let val = 7
-  if (val < 10) {
-      console.log("Meno di 10");
-    } else if (val > 5) {
-      console.log("più di 5");
-    } else {
-      console.log("Uguale a 10 o minore");
-    }
+let val = 7;
+if (val < 10) {
+  console.log("Meno di 10");
+} else if (val > 5) {
+  console.log("più di 5");
+} else {
+  console.log("Uguale a 10 o minore");
+}
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -175,8 +180,8 @@ const me = {
   lastName: "Doe",
   skills: ["javascript", "html", "css"],
 };
-me.city = 'Toronto'
-console.log(me)
+me.city = "Toronto";
+console.log(me);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 12
@@ -184,25 +189,31 @@ console.log(me)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
- delete me. lastName;
-console.log(me)
+delete me.lastName;
+console.log(me);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-me.skills.pop()
-console.log(me)
+me.skills.pop();
+console.log(me);
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let array = [];
+array.push(1,2,3,4,5,6,7,8,9,10);
+console.log(array)
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+array.pop();
+array.push(100)
+  console.log(array)
