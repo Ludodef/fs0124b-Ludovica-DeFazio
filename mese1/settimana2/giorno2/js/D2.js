@@ -69,8 +69,8 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-totalShoppingCart = 30;
-speseSpedizione = 10;
+let totalShoppingCart = 30;
+let speseSpedizione = 10;
 {
   if (totalShoppingCart > 50) {
     console.log("hai il diritto alla spedizione gratuita");
@@ -85,8 +85,16 @@ speseSpedizione = 10;
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
-scontoBlack 
+
 /* SCRIVI QUI LA TUA RISPOSTA */
+let scontoBlack =20 
+{
+  if (totalShoppingCart * 20 / 100 > 50){
+    console.log( 'la spedizione è gratuita , il totale è ' , totalShoppingCart * 20 / 100)
+  }else {
+    console.log( 'addebbito costi spedizione ', totalShoppingCart * 20 / 100 + speseSpedizione)
+  }
+}
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -95,18 +103,46 @@ scontoBlack
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+{
+  let numero1 = 14
+  let numero2 = 5
+  let numero3 = 1
+
+}
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+{
+  let numero1 = 4 
+
+  {
+    if (typeof numero1 === 'number') {
+      console.log('il valore è un numero' )  
+    }else {
+      console.log('il valore non è un numero')
+    }
+  }
+}
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
+
+
 /* SCRIVI QUI LA TUA RISPOSTA */
+{
+  let numero = 5 
+ 
+  if(numero % 2 === 0){
+    console.log('il numero è pari')
+  } else{
+    console.log('il numero è dispari')
+    }
+  }
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -121,6 +157,14 @@ scontoBlack
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let val = 7
+  if (val < 10) {
+      console.log("Meno di 10");
+    } else if (val > 5) {
+      console.log("più di 5");
+    } else {
+      console.log("Uguale a 10 o minore");
+    }
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
