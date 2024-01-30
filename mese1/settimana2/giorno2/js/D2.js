@@ -3,12 +3,27 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+{
+  let numero1 = 2;
+  let numero2 = 5;
+
+  if (numero1 > numero2) {
+    console.log("il maggiore è " + numero1);
+  } else {
+    console.log("Il maggiore è " + numero2);
+  }
+}
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+{
+  let numero1 = 6;
+
+  if (numero1 !== 5) console.log("not equal");
+}
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
@@ -16,11 +31,36 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+{
+  let numero1 = 5;
+  {
+    if (numero1 % 5 === 0) {
+      console.log("divisibile per 5");
+    }
+  }
+}
+
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+{
+  let num1 = 5;
+  let num2 = 3;
+
+  if (
+    num1 === 8 ||
+    num2 === 8 ||
+    num1 + num2 === 8 ||
+    num1 - num2 === 8 ||
+    num2 - num1 === 8
+  ) {
+    console.log("Uno dei numeri è 8.");
+  } else {
+    console.log("Nessuna delle condizioni è soddisfatta.");
+  }
+}
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -29,12 +69,23 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+totalShoppingCart = 30;
+speseSpedizione = 10;
+{
+  if (totalShoppingCart > 50) {
+    console.log("hai il diritto alla spedizione gratuita");
+  } else {
+    console.log(
+      "addebbito dei costi di spedizione",
+      totalShoppingCart + speseSpedizione
+    );
+  }
+}
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
-
+scontoBlack 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 7
@@ -76,10 +127,10 @@
 */
 
 const me = {
-  name: 'John',
-  lastName: 'Doe',
-  skills: ['javascript', 'html', 'css'],
-}
+  name: "John",
+  lastName: "Doe",
+  skills: ["javascript", "html", "css"],
+};
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
