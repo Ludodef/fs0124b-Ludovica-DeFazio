@@ -156,7 +156,7 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
       case "red":
         eyeColor.red.push(starWarsCharacters[i])
       break;
-      case "blue-gray":
+      case "blue_gray":
         eyeColor.blue_gray.push(starWarsCharacters[i])
       break;
 
@@ -201,6 +201,7 @@ if (crewMass < 500){
 /* ESERCIZIO 8
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
+
 
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
