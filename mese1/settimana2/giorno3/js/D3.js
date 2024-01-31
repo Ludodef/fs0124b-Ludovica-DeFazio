@@ -95,7 +95,7 @@ const starWarsCharacters = [
     mass: 77,
     hair_color: "auburn, white",
     skin_color: "fair",
-    eye_color: "blue_gray",
+    eye_color: "blue-gray",
     birth_year: "57BBY",
     gender: "male",
   },
@@ -135,7 +135,7 @@ let eyeColor = {
   yellow: [],
   brown: [],
    red: [],
-  'blue_gray': [],
+  'blue-gray': [],
 };
 
 /* ESERCIZIO 5
@@ -156,8 +156,8 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
       case "red":
         eyeColor.red.push(starWarsCharacters[i])
       break;
-      case "blue_gray":
-        eyeColor.blue_gray.push(starWarsCharacters[i])
+      case "blue-gray":
+        eyeColor['blue-gray'].push(starWarsCharacters[i])
       break;
 
       
@@ -201,8 +201,17 @@ if (crewMass < 500){
 /* ESERCIZIO 8
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
+let arrayModificato = [];
 
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  let characterCopy = {...starWarsCharacters[i]}
+   if(characterCopy.gender == 'n/a'){
+    characterCopy.gender = 'robot';
+  }
+  arrayModificato.push(characterCopy)
+}
 
+console.log(arrayModificato)
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
   Una volta fatto crea un console.log per controllare la proprietà length di "charactersNames" prima e dopo l'operazione.
