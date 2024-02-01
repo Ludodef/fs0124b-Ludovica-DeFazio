@@ -5,7 +5,7 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 function area(l1, l2) {
-  return l1 + l2;
+  return l1 * l2;
 }
 console.log(area(4, 6));
 
@@ -18,7 +18,7 @@ console.log(area(4, 6));
 /* SCRIVI QUI LA TUA RISPOSTA */
 function crazySum(a, b) {
   if (a == b) {
-    return a + b * 3;
+    return (a + b) * 3;
   }
   return a + b;
 }
@@ -46,7 +46,7 @@ console.log(crazyDiff(10))
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 function boundary(n){
-    if (n >= 20 && n <= 100 || n == 400){
+    if ((n >= 20 && n <= 100) || n == 400){
         return true
     }else {
         return false
@@ -105,19 +105,20 @@ console.log(reverseString('ludovica'))
 function upperFirst(str) {
     
     const parola = str.split(" ");
-    
+    let risultato = [];
     for (let i = 0; i < parola.length; i++) {
         
-        parola[i] = parola[i].charAt(0).toUpperCase() + parola[i].slice(1);
+        let primaLettera = parola[i].charAt(0).toUpperCase();
+        let restoParola= parola[i].slice(1);
+        let parolaCompleta = primaLettera + restoParola;
+
+        risultato.push(parolaCompleta)
     }
     
+    return risultato.join(' ')
     
-    return parola.join(" ");
 }
-
-const inputString = "ciao mondo come va";
-const result = upperFirst(inputString);
-console.log(result); 
+console.log(upperFirst('domani dobbiamo fare il test'))
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
@@ -134,9 +135,7 @@ return str.substring(1,3)}
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-function giveMeRandom(str){
-    
-    
+function giveMeRandom(n){
     return Math.floor(Math.random() * 10);
 }
 console.log(giveMeRandom())
