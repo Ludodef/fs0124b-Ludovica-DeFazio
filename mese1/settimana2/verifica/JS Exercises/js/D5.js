@@ -75,11 +75,7 @@ const cars = [
   },
 ]
 let licensePlate = 'AA000BB'
-for (let i = 0; i < cars.length; i++) {
-  licensePlate.push(cars[i])
 
-  console.log(cars[i])
-}
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
