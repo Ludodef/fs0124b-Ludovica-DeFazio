@@ -38,8 +38,8 @@ const pets = ["dog", "cat", "hamster", "redfish"];
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
-const firstPet = pets.shift(); 
-pets.push(firstPet); 
+const firstPet = pets.shift();
+pets.push(firstPet);
 console.log(pets);
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
@@ -64,8 +64,7 @@ const cars = [
     trims: ["life", "style", "r-line"],
   },
 ];
-const generateLicensePlate = 
-function targa(indice) {
+const generateLicensePlate = function targa(indice) {
   switch (indice) {
     case 0:
       return "AB123CD";
@@ -73,10 +72,8 @@ function targa(indice) {
       return "DE456FG";
     case 2:
       return "GH789IJ";
-    
   }
 };
-
 
 for (let i = 0; i < cars.length; i++) {
   cars[i].licensePlate = generateLicensePlate(i);
@@ -87,45 +84,38 @@ console.log(cars);
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
-newCars = {
+(newCars = {
   brand: "Fiat",
   model: "Panda",
   color: "red",
   trims: ["life", "style", "r-line"],
-},
-cars.push(newCars)
-let trimsPop = ''
+}),
+  cars.push(newCars);
+let trimsPop = "";
 for (let i = 0; i < cars.length; i++) {
-  
-  cars[i].trims.pop()
-  
-  
+  cars[i].trims.pop();
 }
-console.log(cars)
-console.log(trimsPop)
+console.log(cars);
+console.log(trimsPop);
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
 const justTrims = [];
 for (let i = 0; i < cars.length; i++) {
-  
-  
-  justTrims.push(cars[i].trims[0])
-  
+  justTrims.push(cars[i].trims[0]);
 }
-console.log(justTrims)
+console.log(justTrims);
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
 for (let i = 0; i < cars.length; i++) {
-  if('color' == 'b'){
-    console.log('Fizz')
-  }else{
-    console.log('Buzz')
+  if ("color" == "b") {
+    console.log("Fizz");
+  } else {
+    console.log("Buzz");
   }
-  
 }
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
@@ -133,9 +123,9 @@ for (let i = 0; i < cars.length; i++) {
 const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ];
-let i = 0
-while (i < numericArray.length && numericArray[i] != 32){
-  console.log(numericArray[i])
+let i = 0;
+while (i < numericArray.length && numericArray[i] != 32) {
+  console.log(numericArray[i]);
   i++;
 }
 
@@ -145,3 +135,121 @@ while (i < numericArray.length && numericArray[i] != 32){
     es. [f, b, e] --> [6, 2, 5]
 */
 const charactersArray = ["g", "n", "u", "z", "d"];
+let alfabeto = [
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "w",
+  "x",
+  "y",
+  "z",
+];
+
+let posizioni = [];
+
+for (let i = 0; i < charactersArray.length; i++) {
+  const alfabetoArray = charactersArray[i];
+  switch (alfabetoArray) {
+    case "a":
+      posizioni.push(1);
+      break;
+    case "b":
+      posizioni.push(2);
+      break;
+    case "c":
+      posizioni.push(3);
+      break;
+    case "d":
+      posizioni.push(4);
+      break;
+    case "e":
+      posizioni.push(5);
+      break;
+    case "f":
+      posizioni.push(6);
+      break;
+    case "g":
+      posizioni.push(7);
+      break;
+    case "h":
+      posizioni.push(8);
+      break;
+    case "i":
+      posizioni.push(9);
+      break;
+    case "j":
+      posizioni.push(10);
+      break;
+    case "k":
+      posizioni.push(11);
+      break;
+    case "l":
+      posizioni.push(12);
+      break;
+    case "m":
+      posizioni.push(13);
+      break;
+    case "n":
+      posizioni.push(14);
+      break;
+    case "o":
+      posizioni.push(15);
+      break;
+    case "p":
+      posizioni.push(16);
+      break;
+    case "q":
+      posizioni.push(17);
+      break;
+    case "r":
+      posizioni.push(18);
+      break;
+    case "s":
+      posizioni.push(19);
+      break;
+    case "t":
+      posizioni.push(20);
+      break;
+    case "u":
+      posizioni.push(21);
+      break;
+    case "v":
+      posizioni.push(22);
+      break;
+    case "w":
+      posizioni.push(23);
+      break;
+    case "x":
+      posizioni.push(24);
+      break;
+    case "y":
+      posizioni.push(25);
+      break;
+    case "z":
+      posizioni.push(26);
+      break;
+    default:
+      posizioni.push(null);
+  }
+}
+
+console.log(posizioni);
