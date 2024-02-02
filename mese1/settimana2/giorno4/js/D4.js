@@ -132,6 +132,8 @@ console.log(cutString("ciao"));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 function giveMeRandom(n) {
-  return Math.floor(Math.random() * 10);
+  let numeriRandom = []
+  for (let i = 0; i < n; i++) numeriRandom.push(Math.floor(Math.random()*11))
+  return numeriRandom
 }
-console.log(giveMeRandom());
+console.log(giveMeRandom(3))
