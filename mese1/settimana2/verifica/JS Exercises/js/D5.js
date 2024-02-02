@@ -38,8 +38,8 @@ const pets = ["dog", "cat", "hamster", "redfish"];
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
-const firstPet = pets.shift();
-pets.push(firstPet);
+const primoPet = pets.shift();
+pets.push(primoPetPet);
 console.log(pets);
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
@@ -64,7 +64,7 @@ const cars = [
     trims: ["life", "style", "r-line"],
   },
 ];
-const generateLicensePlate = function targa(indice) {
+const generaLicensePlate = function targa(indice) {
   switch (indice) {
     case 0:
       return "AB123CD";
@@ -76,7 +76,7 @@ const generateLicensePlate = function targa(indice) {
 };
 
 for (let i = 0; i < cars.length; i++) {
-  cars[i].licensePlate = generateLicensePlate(i);
+  cars[i].licensePlate = generaLicensePlate(i);
 }
 
 console.log(cars);
@@ -247,8 +247,7 @@ for (let i = 0; i < charactersArray.length; i++) {
     case "z":
       posizioni.push(26);
       break;
-    default:
-      posizioni.push(null);
+    
   }
 }
 

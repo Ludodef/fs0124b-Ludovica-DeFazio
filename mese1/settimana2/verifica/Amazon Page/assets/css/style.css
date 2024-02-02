@@ -1,1 +1,113 @@
 /* Your styles here */
+header {
+  background-color: #131921;
+}
+header img {
+  width: 150px;
+}
+.menu {
+  background-color: #232f3e;
+  display: flex;
+  color: white;
+  padding: 12px 0;
+  margin: 20px 3px;
+}
+
+.ancora {
+  font-size: 1.2em;
+  padding: 12px 3px;
+  margin: 20px;
+}
+.ancora a {
+  text-decoration: none;
+  color: white;
+}
+
+#container {
+  background-color: #e3e6e6;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  margin: 20px;
+}
+.bg-arancione {
+  background-color: #f68426;
+  color: white;
+  text-align: center;
+
+  padding: 12px 0;
+}
+.bg-ottanio {
+  block-size: fit-content;
+  background-image: url(../images/bg-image.png);
+
+  color: white;
+  padding: 80px;
+  margin: 20px 0;
+}
+.bg-ottanio h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+.bg-ottanio p {
+  text-align: center;
+  padding-top: 30px;
+  font-weight: bold;
+}
+.gift {
+  background-color: white;
+
+  width: 100%;
+  margin: 0 auto;
+}
+.h3 {
+  display: flex;
+}
+.h3 h3 {
+  font-size: 1.2em;
+  padding-top: 15px;
+  padding-left: 15px;
+  display: flex;
+}
+.h3 a {
+  text-decoration: none;
+}
+
+.foto {
+  width: calc(100% / 5);
+  margin-bottom: 10px;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 20px;
+}
+.foto img {
+  border-radius: 10%;
+  max-width: 100%;
+  width: fit-content;
+  height: 400px;
+}
+
+.foto1-bg {
+  background-image: url(../images/img_9.png);
+  background-position: center;
+  width: 100%;
+  height: 100px;
+  overflow: visible;
+}
+.foto2-bg {
+  border: 1px solid rebeccapurple;
+  background-color: aqua;
+  background-image: url(../images/img_10.png);
+  background-position: center;
+  width: 100%;
+  height: 100px;
+  overflow: visible;
+}
+footer {
+  background-color: #131921;
+}
+#footer {
+  background-color: #232f3e;
+}
