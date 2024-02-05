@@ -120,13 +120,12 @@ changePcontent()
       */
 
       const changeUrls = function () {
-        let a = document.getElementsByTagName("a")
-        let href = document.querySelectorAll("href")
-        
-          href.firstChild.innerHTML = "https://www.google.com"
-      
-      }
-changeUrls()
+        let link = document.querySelectorAll("a:not(footer a)");
+        link.forEach(function (link) {
+          link.href = "https://www.google.com/";
+        });
+      };
+      changeUrls();
       /* ESERCIZIO 5
        Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
     */
