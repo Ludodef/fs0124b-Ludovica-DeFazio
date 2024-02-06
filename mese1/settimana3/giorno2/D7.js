@@ -16,21 +16,24 @@ concStringhe("odio", "Javascript");
 */
 const random = [];
 const arr10 = (arr) => {
-  for (let i = 0; i < arr; i++) random.push(Math.floor(Math.random() * 100));
+  for (let i = 0; i < arr; i++) random.push(Math.floor(Math.random() * 101));
   return random;
 };
-console.log(arr10(10));
+
+console.log(arr10());
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
-const numeri = (...random) => {
-  if (random % 2 == 0) {
-    return true;
-  } else {
-    return false;
-  }
+function numeri(){
+  //return arr10().filter(n => n % 2 == 0)
+  let pari= arr10()
+  let risultato = pari.filter(function (n){
+    return n % 2 === 0 
+  });
+  return risultato
+ 
 };
-console.log(numeri());
+console.log( numeri() );
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
@@ -43,8 +46,12 @@ console.log(totale);
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 const fn = (temp, curr) => temp + curr;
-const sommaNumeri = random.reduce(fn, 0);
-console.log(sommaNumeri);
+function sommaNumeri(){
+  return random.reduce((temp,curr) => temp + curr)
+  };
+
+
+console.log(sommaNumeri());
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
@@ -200,7 +207,7 @@ movies.forEach((Year) => {
 
 
 }
-
+)
 
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
