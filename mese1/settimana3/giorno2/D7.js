@@ -64,7 +64,18 @@ console.log(stringa)
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
-
+function numeriDispari() {
+  let dispari = []
+  for (let i = 0; i < 99; i++) {
+    if(i % 2 !== 0){
+      dispari.push(i)
+    }
+    
+  }
+  return dispari
+}
+let dispari = numeriDispari()
+console.log(dispari )
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
   {
@@ -184,6 +195,12 @@ const movies = [
 /* ESERCIZIO 9 (forEach)
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
+const film =[]
+movies.forEach((Year) => {
+  
+
+}
+
 
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
