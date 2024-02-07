@@ -1,7 +1,7 @@
 body{
     background-color: plum;
 }
-form{
+.form{
     background-color: white;
     border-radius: 10%;
     margin: 0 auto;
@@ -12,4 +12,10 @@ form{
  h1{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center; 
+}
+
+.todo{
+border: 1px solid red;
+height: 100px;
+width: 100px;
 }
