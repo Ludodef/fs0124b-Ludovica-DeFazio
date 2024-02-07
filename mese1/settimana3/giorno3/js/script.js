@@ -1,16 +1,26 @@
-let bottone = document.getElementById("bottone");
-let voce = document.getElementById('input');
-let lista = document.getElementsByClassName('form')
+let bottone = document.getElementById("salva");
 
-function aggiungiVoce() {
-  
-  
-}
-bottone.addEventListener("click", ()=> {
-    const div = document.createElement('div')
-    div.classList.add('todo')
-    
-    lista.append(div)
-    lista.innerText = 'text'.value
+bottone.addEventListener("click", function () {
+  const lista = document.querySelector("#lista");
+  const input = document.querySelector("#testo");
 
-});
+  let li = document.createElement("li");
+  let button = document.createElement("button");
+
+  button.innerText = "elimina";
+  li.innerText = input.value;
+  li.classList.add('task')
+  li.addEventListener('click',function(){
+    li.classList.toggle('completed')
+  })
+
+  button.addEventListener('click',function(){
+    li.remove()
+  })
+
+  li.append(button);
+  lista.append(li);
+  })
+
+  
+
