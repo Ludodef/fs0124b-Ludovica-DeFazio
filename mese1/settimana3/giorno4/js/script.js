@@ -15,6 +15,6 @@ random()})
 
 function random(){
         let numeroCasuale = Math.floor(Math.random()* 100)
-        document.querySelector('.number').innerHTML= numeroCasuale
+        document.querySelector('.number').innerHTML=  'Il tuo numero è' + numeroCasuale
     }
 
