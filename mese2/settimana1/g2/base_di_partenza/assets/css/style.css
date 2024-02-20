@@ -120,8 +120,8 @@ section h2 {
   background-color: #a3a3a3;
   padding: 0px 1em;
   position: absolute;
-  top:-15px;
-  left:10px;
+  top: -15px;
+  left: 10px;
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
@@ -153,7 +153,6 @@ h1 + p {
   left: 0;
   opacity: 0.5;
   margin-top: -18px;
-  
 }
 
 @media screen and (max-width: 499px) {
@@ -199,12 +198,10 @@ h1 + p {
   section {
     border-radius: 20px;
   }
-  h1{
+  h1 {
     position: relative;
   }
-
 }
-
 
 .imgLeft {
   margin-right: 20px;
@@ -330,7 +327,6 @@ aside h2 {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 1em;
-  
 }
 aside div {
   background-color: #e3e3e3;
@@ -366,36 +362,28 @@ footer {
   text-align: center;
   font-size: 1.2rem;
 }
-.top-page{
+.top-page {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  background-color: rgba(225, 225, 225, 0.8);
   border: 3px solid whitesmoke;
   border-radius: 5px;
   width: 50px;
   height: 50px;
-  
 }
-.top-page a {
+.top-page i {
   color: #a02571;
-  background-color: white;
-  text-align: center;
   font-size: 1.5em;
-  position: relative;
-  margin-right: -3px;
-  right: 0px;
-  padding-top: 3px;
-  padding-right: 26px;
-  padding-bottom: 9px;
-  
+  vertical-align: text-top;
 }
-.icon:nth-of-type(1){
+.icon:nth-of-type(1) {
   position: fixed;
-  bottom:135px;
+  bottom: 135px;
 }
-.icon:nth-of-type(2){
+.icon:nth-of-type(2) {
   position: fixed;
-  bottom:78px;
+  bottom: 78px;
 }
 .fas.fa-tag {
   position: absolute;
@@ -422,15 +410,14 @@ footer a {
     margin-left: auto;
     margin-right: auto;
   }
-  .icon:nth-of-type(1){
+  .icon:nth-of-type(1) {
     position: absolute;
-    top:60px;
+    top: 60px;
   }
-  .icon:nth-of-type(2){
+  .icon:nth-of-type(2) {
     position: absolute;
-    top:0;
+    top: 0;
   }
-  
 }
 
 @media print {
@@ -461,5 +448,4 @@ footer a {
   .toTop {
     display: none;
   }
- 
 }
