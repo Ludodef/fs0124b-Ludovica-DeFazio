@@ -1,0 +1,55 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #572C2D;
+    font-size: 16px;
+}
+
+
+.tab{
+    background-image: url(../assets/imgs/honey.jpg);
+    background-color: #FAF5E1;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+
+    border-radius: 50px;
+    width: 20%;
+    height: 400px;
+    padding: 10px;
+    
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap:20px;
+}
+.description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+.description h2{
+font-weight: bold;
+font-size: 1.4em;
+
+}
+.description p h3{
+    
+    font-size: 1em;
+}
+
+
+.cart{
+    background-color:#F1D884 ;
+    width: 40%;
+    height: 10%;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
