@@ -143,3 +143,19 @@ header {
 .section-trending{
     border-bottom: 1px solid #F2F2F2;
 }
+
+/*news*/
+
+.news{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+ 
+
+   
+.image-news img{
+    width: 200px;
+    height: 134px;
+    
+}
