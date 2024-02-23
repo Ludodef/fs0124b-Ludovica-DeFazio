@@ -145,11 +145,15 @@ header {
 }
 
 /*news*/
-
+.final-part{
+    margin: 0 auto;
+}
 .news{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    width: 700px;
+    margin: 100px;
 }
  
 
@@ -157,5 +161,19 @@ header {
 .image-news img{
     width: 200px;
     height: 134px;
+    align-self: flex-end;
+}
+.news-article{
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 200px;
+  width: 700px;
+}
+
+
+.miniatura{
     
+    width: 20px;
+    height: 20px;
 }
