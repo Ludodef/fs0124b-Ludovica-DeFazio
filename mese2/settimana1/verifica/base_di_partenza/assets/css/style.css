@@ -96,13 +96,13 @@ header {
 /*#F2F2F2*/
 .trending{
     height: 400px;
-    width: 900px;
+    width: 1000px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20px;
+  justify-content: space-between;
+  position: relative;
+  gap: 40px;
   
   align-content: center;
   margin: 0 auto;
@@ -138,42 +138,90 @@ header {
     padding-top: 10px;
 }
 .trending-title{
-    display: flex;
+  display: flex;
+  position: absolute;
+  top:38px;
+
+}
+.trending-title h5{
+  padding-top: 5px;
 }
 .section-trending{
     border-bottom: 1px solid #F2F2F2;
 }
 
 /*news*/
+
 .final-part{
-    margin: 0 auto;
+  width: 100%;
+  height:1000px;
+  display: flex;
+}
+.news-part{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .news{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 700px;
-    margin: 100px;
-}
- 
-
-   
-.image-news img{
-    width: 200px;
-    height: 134px;
-    align-self: flex-end;
-}
-.news-article{
-    display: flex;
+  height: 14%;
+  display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  height: 200px;
-  width: 700px;
+  flex-wrap: nowrap;
+  width: 80%;
+  align-items: center;
+  margin: 0 auto;
+  gap: 30px;
+}
+.pic-news{
+  width: 200px;
+  height: 134px;
+  float: right;
 }
 
+.tag-collector{
+  width: 40%;
+  border: 1px solid aqua;
+}
+.pic-author{
+  width: 4%;
+  float: left;
+}
+.author{
+  display: flex;
+  justify-content: flex-start;
+  gap:11px
+}
+.author-name{
+  padding-top: 3px;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.title-news{
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+.description{
+  color: #6B6B6B;
+}
 
-.miniatura{
-    
-    width: 20px;
-    height: 20px;
+.information{
+  color: #6B6B6B;
+  font-size: 0.8em;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 10px;
+  position: relative;
+}
+.bookmark{
+  position: absolute;
+  right: 0;
+}
+
+.category{
+  background-color:#F2F2F2 ;
+  width: 40px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 10px;
 }
