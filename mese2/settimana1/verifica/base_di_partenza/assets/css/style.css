@@ -156,6 +156,7 @@ header {
   width: 100%;
   height:1000px;
   display: flex;
+  
 }
 .news-part{
   width: 60%;
@@ -179,10 +180,7 @@ header {
   float: right;
 }
 
-.tag-collector{
-  width: 40%;
-  border: 1px solid aqua;
-}
+
 .pic-author{
   width: 4%;
   float: left;
@@ -224,4 +222,17 @@ header {
   height: 20px;
   padding: 5px;
   border-radius: 10px;
+}
+
+/*TAG COLLECTOR*/
+.tag-collector{
+  position: relative;
+}
+
+.tags{
+ 
+  position: sticky;
+  top: 100px;
+ 
+  
 }
