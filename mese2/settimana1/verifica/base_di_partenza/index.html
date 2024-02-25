@@ -28,7 +28,7 @@
             <a href=""> Write</a>
             <a href=""> Sign in</a>
           
-          <button>Get started</button>
+          <button class="start">Get started</button>
         </div>
       
     </nav>
@@ -59,7 +59,10 @@
             <div class="article">
                 <h4 class="number">01</h4>
                 <img src="./assets/imgs/image01.jpeg" alt="" />
-                <p>Tom Cooper </p>
+                <div class="tooltip-wrap">
+                    <div class="tooltip">Questo è il box con tutte le informazioni dell'autore</div>
+                <p class="author-name">Tom Cooper </p>
+                </div>
                 <h3>Ukraine War, 23 October 2022</h3>
                 <p>Oct 26·24 min read</p>
             </div>
@@ -67,7 +70,10 @@
             <div class="article">
                 <h4 class="number">02</h4>
                 <img src="./assets/imgs/image02.png" alt="" />
-                <p>Arthur Hayes in Entrepreneur's Handbook</p>
+                <div class="tooltip-wrap"> <!--in questa sezione non funzionano i tooltip ma alle news funzionano benissimo-->
+                    <div class="tooltip">Questo è il box con tutte le informazioni dell'autore</div>
+                <p class="author-name">Arthur Hayes in Entrepreneur's Handbook</p>
+                </div>
                 <h3>Comeback</h3>
                 <p>Oct 26·24 min read</p>
             </div>   
@@ -75,7 +81,10 @@
             <div class="article">
                 <h4 class="number">03</h4>
                 <img src="./assets/imgs/image03.jpeg" alt="" />
-                <p>Tom Cooper</p>
+                <div class="tooltip-wrap">
+                    <div class="tooltip">Questo è il box con tutte le informazioni dell'autore</div>
+                <p class="author-name">Tom Cooper</p>
+                </div>
                 <h3>How I Learned to Love My Breasts Even Though One Is A Horcrux For Voldemort</h3>
                 <p>Oct 26·2 min read</p>
             </div>    
@@ -83,7 +92,10 @@
             <div class="article">
                 <h4 class="number">04</h4>
                 <img src="./assets/imgs/image04.png" alt="" />
-                <p>Frank Mastropolo in The Riffk</p>
+                <div class="tooltip-wrap">
+                    <div class="tooltip">Questo è il box con tutte le informazioni dell'autore</div>
+                <p class="author-name">Frank Mastropolo in The Riffk</p>
+                </div>
                 <h3>The Night Paul McCartney Donned a Disguise at Fillmore East</h3>
                 <p>Oct 22·3 min read</p>
             </div>     
@@ -91,7 +103,10 @@
             <div class="article">
                 <h4 class="number">05</h4>
                 <img src="./assets/imgs/image05.jpeg" alt="" />
-                <p>Frank Andrade in Towards Data Science</p>
+                <div class="tooltip-wrap">
+                    <div class="tooltip">Questo è il box con tutte le informazioni dell'autore</div>
+                <p class="author-name">Frank Andrade in Towards Data Science</p>
+                </div>
                 <h3>5 Python Projects to Automate Your Life: From Beginner to Advanced</h3>
                 <p>Oct 13·6 min read</p>
             </div>    
@@ -99,7 +114,10 @@
             <div class="article">
                 <h4 class="number">06</h4>
                 <img src="./assets/imgs/image06.png" alt="" />
-                <p>Wesley Smits in JavaScript in Plain English</p>
+                <div class="tooltip-wrap">
+                    <div class="tooltip">Questo è il box con tutte le informazioni dell'autore</div>
+                <p class="author-name">Wesley Smits in JavaScript in Plain English</p>
+                </div>
                 <h3>How To Make Visual Studio Code Look Amazing</h3>
                 <p>Oct 20·7 min read</p>
             </div>    
@@ -115,7 +133,100 @@
                     <div class="text-part">
                         <div class="author"> 
                             <img class="pic-author" src="./assets/imgs/image07.jpeg" alt="">
+                            <div class="tooltip-wrap">
+                                <div class="tooltip">
+                                    <img class="pic-author" src="./assets/imgs/image07.jpeg" alt="">
+                                    <p class="author-name">Robert Roy Britt</p>
+                                </div>
                             <p class="author-name">Robert Roy Britt</p>
+                            </div>
+                        </div>
+                            <div class="notizia">
+                                <p class="title-news">How Old is Old?</p>
+                                <p class="description">What we consider “old” changes dramatically with age, and our perspectives can be predictive of how well we age</p>
+                                    <div class="information">
+                                        <p>Oct 27 · 5 min read · <span class="category">Aging</span> </p>
+                                        <img src="./assets/imgs/svg/star.svg" alt="">
+                                            <div class="bookmark">
+                                                <img src="./assets/imgs/svg/bookmark.svg" alt="">
+                                            </div>
+                                        
+                                    </div>
+                                    
+                            </div>
+
+                    </div>
+                    <img class="pic-news" src="./assets/imgs/image08.jpeg" alt="">
+                </div>
+                <div class="news">
+                    <div class="text-part">
+                        <div class="author"> 
+                            <img class="pic-author" src="./assets/imgs/image07.jpeg" alt="">
+                            <div class="tooltip-wrap">
+                                <div class="tooltip">
+                                    <img class="pic-author" src="./assets/imgs/image07.jpeg" alt="">
+                                    <p class="author-name">Robert Roy Britt</p>
+                                </div>
+                            <p class="author-name">Robert Roy Britt</p>
+                            </div>
+                        </div>
+                            <div class="notizia">
+                                <p class="title-news">How Old is Old?</p>
+                                <p class="description">What we consider “old” changes dramatically with age, and our perspectives can be predictive of how well we age</p>
+                                    <div class="information">
+                                        <p>Oct 27 · 5 min read · <span class="category">Aging</span> </p>
+                                        <img src="./assets/imgs/svg/star.svg" alt="">
+                                            <div class="bookmark">
+                                                <img src="./assets/imgs/svg/bookmark.svg" alt="">
+                                            </div>
+                                        
+                                    </div>
+                                    
+                            </div>
+
+                    </div>
+                    <img class="pic-news" src="./assets/imgs/image08.jpeg" alt="">
+                </div>
+                <div class="news">
+                    <div class="text-part">
+                        <div class="author"> 
+                            <img class="pic-author" src="./assets/imgs/image07.jpeg" alt="">
+                            <div class="tooltip-wrap">
+                                <div class="tooltip">
+                                    <img class="pic-author" src="./assets/imgs/image07.jpeg" alt="">
+                                    <p class="author-name">Robert Roy Britt</p>
+                                </div>
+                            <p class="author-name">Robert Roy Britt</p>
+                            </div>
+                        </div>
+                            <div class="notizia">
+                                <p class="title-news">How Old is Old?</p>
+                                <p class="description">What we consider “old” changes dramatically with age, and our perspectives can be predictive of how well we age</p>
+                                    <div class="information">
+                                        <p>Oct 27 · 5 min read · <span class="category">Aging</span> </p>
+                                        <img src="./assets/imgs/svg/star.svg" alt="">
+                                            <div class="bookmark">
+                                                <img src="./assets/imgs/svg/bookmark.svg" alt="">
+                                            </div>
+                                        
+                                    </div>
+                                    
+                            </div>
+
+                    </div>
+                    <img class="pic-news" src="./assets/imgs/image08.jpeg" alt="">
+                </div>
+                <div class="news">
+                    <div class="text-part">
+                        <div class="author"> 
+                            <img class="pic-author" src="./assets/imgs/image07.jpeg" alt="">
+                            <div class="tooltip-wrap">
+                                <div class="tooltip">
+                                    <img class="pic-author" src="./assets/imgs/image07.jpeg" alt="">
+                                    <p class="author-name">Robert Roy Britt</p>
+                                </div>
+                            <p class="author-name">Robert Roy Britt</p>
+                            </div>
                         </div>
                             <div class="notizia">
                                 <p class="title-news">How Old is Old?</p>
@@ -161,76 +272,13 @@
                     <div class="text-part">
                         <div class="author"> 
                             <img class="pic-author" src="./assets/imgs/image07.jpeg" alt="">
+                            <div class="tooltip-wrap">
+                                <div class="tooltip">
+                                    <img class="pic-author" src="./assets/imgs/image07.jpeg" alt="">
+                                    <p class="author-name">Robert Roy Britt</p>
+                                </div>
                             <p class="author-name">Robert Roy Britt</p>
-                        </div>
-                            <div class="notizia">
-                                <p class="title-news">How Old is Old?</p>
-                                <p class="description">What we consider “old” changes dramatically with age, and our perspectives can be predictive of how well we age</p>
-                                    <div class="information">
-                                        <p>Oct 27 · 5 min read · <span class="category">Aging</span> </p>
-                                        <img src="./assets/imgs/svg/star.svg" alt="">
-                                            <div class="bookmark">
-                                                <img src="./assets/imgs/svg/bookmark.svg" alt="">
-                                            </div>
-                                        
-                                    </div>
-                                    
                             </div>
-
-                    </div>
-                    <img class="pic-news" src="./assets/imgs/image08.jpeg" alt="">
-                </div>
-                <div class="news">
-                    <div class="text-part">
-                        <div class="author"> 
-                            <img class="pic-author" src="./assets/imgs/image07.jpeg" alt="">
-                            <p class="author-name">Robert Roy Britt</p>
-                        </div>
-                            <div class="notizia">
-                                <p class="title-news">How Old is Old?</p>
-                                <p class="description">What we consider “old” changes dramatically with age, and our perspectives can be predictive of how well we age</p>
-                                    <div class="information">
-                                        <p>Oct 27 · 5 min read · <span class="category">Aging</span> </p>
-                                        <img src="./assets/imgs/svg/star.svg" alt="">
-                                            <div class="bookmark">
-                                                <img src="./assets/imgs/svg/bookmark.svg" alt="">
-                                            </div>
-                                        
-                                    </div>
-                                    
-                            </div>
-
-                    </div>
-                    <img class="pic-news" src="./assets/imgs/image08.jpeg" alt="">
-                </div>
-                <div class="news">
-                    <div class="text-part">
-                        <div class="author"> 
-                            <img class="pic-author" src="./assets/imgs/image07.jpeg" alt="">
-                            <p class="author-name">Robert Roy Britt</p>
-                        </div>
-                            <div class="notizia">
-                                <p class="title-news">How Old is Old?</p>
-                                <p class="description">What we consider “old” changes dramatically with age, and our perspectives can be predictive of how well we age</p>
-                                    <div class="information">
-                                        <p>Oct 27 · 5 min read · <span class="category">Aging</span> </p>
-                                        <img src="./assets/imgs/svg/star.svg" alt="">
-                                            <div class="bookmark">
-                                                <img src="./assets/imgs/svg/bookmark.svg" alt="">
-                                            </div>
-                                        
-                                    </div>
-                                    
-                            </div>
-
-                    </div>
-                    <img class="pic-news" src="./assets/imgs/image08.jpeg" alt="">
-                </div>
-                <div class="news">
-                    <div class="text-part">
-                        <div class="author"> 
-                            <img class="pic-author" src="./assets/imgs/image07.jpeg" alt="">
-                            <p class="author-name">Robert Roy Britt</p>
                         </div>
                             <div class="notizia">
                                 <p class="title-news">How Old is Old?</p>
@@ -252,20 +300,50 @@
             </div>
             <div class="tag-collector">
                 <div class="tags">
-                <h3>Discover more of what matters to you</h3>
-                    <p class="tag">Programming</p>
-                    <p class="tag">Data Science</p>
-                    <p class="tag">Technology</p>
-                    <p class="tag">Self Improvement</p>
-                    <p class="tag">Writing</p>
-                    <p class="tag">Relationships</p>
-                    <p class="tag">Machine Learning</p>
-                    <p class="tag">Productivity</p>
-                    <p class="tag">Politics</p>
-                    </div>
+                    <h3>Discover more of what matters to you</h3>
+                        <div class="list-tag">
+                            <p class="tag">Programming</p>
+                            <p class="tag">Data Science</p>
+                            <p class="tag">Technology</p>
+                            <p class="tag">Self Improvement</p>
+                            <p class="tag">Writing</p>
+                            <p class="tag">Relationships</p>
+                            <p class="tag">Machine Learning</p>
+                            <p class="tag">Productivity</p>
+                            <p class="tag">Politics</p>
+                        </div>
+                        <p>See more topics
+                        </p>
+                </div>
+                <div class="footer">
+                    <a href="">Help</a>
+                    <a href="">Status</a>
+                    <a href="">Writers</a>
+                    <a href="">Blog</a>
+                    <a href="">Careers</a>
+                    <a href="">Privacy</a>
+                    <a href="">Terms</a>
+                    <a href="">About</a>
+                    <a href="">Knowable</a>
+                </div>
             </div>
         </div>
         
+
+        <script>
+            let nav = document.querySelector('nav')
+            let button = document.querySelector('.start')
+
+            window.onscroll = function(){
+                if(window.scrollY > 399) {
+                    nav.classList.add('cambio-colore')
+                    button.classList.add('bottone-cambio')
+                }else{
+                    nav.classList.remove('cambio-colore')
+                    button.classList.remove('bottone-cambio')
+                }
+            }
+        </script>
   </body>
 </html>
     
