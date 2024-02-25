@@ -174,7 +174,7 @@ header {
   align-items: center;
   margin: 0 auto;
   gap: 30px;
-  
+  padding: 20px;
 }
 .pic-news {
   width: 200px;
