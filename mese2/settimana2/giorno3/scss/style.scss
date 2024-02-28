@@ -1,0 +1,29 @@
+@import 'reset';
+@import 'colori';
+@import 'font';
+
+nav{
+    display:flex;
+    font-family: $font-family;
+    justify-content: flex-start;
+    flex-direction: row;
+
+}
+nav{
+    img{
+        width: 100px;
+    }
+}
+
+nav{
+    ul{
+        display: flex;
+        align-items: flex-end;
+        
+        
+    }
+}
+
+header{
+    background-color:$colore;
+}
