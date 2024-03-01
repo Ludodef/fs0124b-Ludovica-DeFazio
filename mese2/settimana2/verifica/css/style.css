@@ -11848,8 +11848,10 @@ body {
   background-color: black;
 }
 
-.spostato {
-  margin-left: 10px;
+@media screen and (min-width: 992px) {
+  .spostato {
+    margin-left: 10px;
+  }
 }
 
 .logo {
@@ -11879,6 +11881,15 @@ body {
 h3, .h3 {
   font-size: 1.2em;
   margin-right: 20px;
+  font-weight: bold;
+}
+
+.img_box img {
+  max-width: 100%;
+}
+
+.carousel {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
