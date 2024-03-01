@@ -18,7 +18,9 @@ var splide = new Splide( '.splide', {
   
   splide.mount();
   
-  var splide = new Splide( '.splide2', {
+ 
+  
+  var splide = new Splide( '.carosello2', {
     perPage: 6,
     gap    : '2rem',
     autoWidth: true,
@@ -38,6 +40,7 @@ var splide = new Splide( '.splide', {
   
   splide.mount();
 
+  
   var splide = new Splide( '.splide3', {
     perPage: 6,
     gap    : '2rem',
