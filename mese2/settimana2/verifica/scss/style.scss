@@ -1,0 +1,36 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'variables.scss';
+
+body{
+    background-color: black;
+}
+
+.logo{
+    width: 100px;
+    
+}
+
+.avatar{
+    width: 32px;
+}
+
+.icone{
+    color: $colore;
+}
+
+.dropdown-menu[data-bs-popper] {
+    
+    left: -100px;
+}
+
+.margin{
+    margin-left: 89px;
+}
+
+.text{
+    color: $colore;
+}
+
+h3{
+    font-size: 1.2em;
+}
