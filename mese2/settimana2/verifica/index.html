@@ -14,10 +14,11 @@
     <div class="container-fluid ">
         <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
             <div class="container-fluid">
+              
               <a class="navbar-brand" href="#">
                 <img src="./Netflix-assets/assets/netflix_logo.png" class="logo">
               </a>
-              <button class="navbar-toggler margin" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -43,14 +44,14 @@
                 
               </div>
               
-                <div class="dropdown text-end">
-                  <a href="#" class="d-block link-light text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="dropdown text-end d-flex flex-nowrap align-item-center d-none d-md-block">
+                  <a href="#" class="d-block link-light text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
                     <img src="./Netflix-assets/assets/avatar.png" class="avatar">
                   </a>
-                  <ul class="dropdown-menu text-small">
-                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                  <ul class="dropdown-menu text-small dropdown-menu-sm-end">
+                    <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
                     <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Payment</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="#">Sign out</a></li>
                   </ul>
@@ -77,8 +78,8 @@
                         </div>
                         <div class="col-3 d-flex justify-content-end ">
                         <div class="btn-group " role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-outline-light"><i class="bi bi-text-left icone"></i></button>
-                            <button type="button" class="btn btn-outline-light"><i class="bi bi-grid-fill icone"></i></button>
+                            <button type="button" class="btn btn-outline-light"><i class="bi bi-text-left"></i></button>
+                            <button type="button" class="btn btn-outline-light"><i class="bi bi-grid-fill"></i></button>
 
                         </div>
                         
@@ -86,7 +87,7 @@
             </header>
             <div class="carousel">
               <h5 class="text">Trending now</h5>
-              <section class="splide" aria-label="Splide Basic HTML Example">
+              <section  id="slide1" class="splide">
                 <div class="splide__track">
                   <ul class="splide__list">
                     <div class="splide__slide">
@@ -135,7 +136,7 @@
             </div>
             <div class="carousel">
               <h5 class="text">Watch It Again</h5>
-              <section class="carosello2" aria-label="Splide Basic HTML Example">
+              <section id="slide2" class="splide">
                 <div class="splide__track">
                   <ul class="splide__list">
                     <div class="splide__slide">
@@ -184,7 +185,7 @@
             </div>
             <div class="carousel">
               <h5 class="text">New Release</h5>
-              <section class="splide3" aria-label="Splide Basic HTML Example">
+              <section id="slide3" class="splide">
                 <div class="splide__track">
                   <ul class="splide__list">
                     <div class="splide__slide">
@@ -239,7 +240,7 @@
 
 
       
-      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 justify-content-center position-relative ">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 justify-content-center position-relative centro">
         
         <ul class="nav col-md-4  list-unstyled position-absolute py-1 my-1 px-5 mx-5 top-0 start-0">
         <li class="ms-3"><a class="text-light text-opacity-50" href="#"><i class="bi bi-facebook"></i></a></li>
@@ -249,7 +250,7 @@
       </ul>
        
     
-        <div class="col-6 mb-3">
+        <div class="col-6 mb-5">
           
           <ul class="nav flex-column ">
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light text-opacity-50">Audio e Sottotitoli</a></li>
@@ -269,7 +270,7 @@
           </ul>
         </div>
     
-        <div class="col-6 mb-3">
+        <div class="col-6 mb-3 d-none d-md-block">
          
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light text-opacity-50">Help Center</a></li>
@@ -278,7 +279,7 @@
           </ul>
         </div>
 
-        <div class="col-6 mb-3">
+        <div class="col-6 mb-5 position-relative d-none d-md-block">
          
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light text-opacity-50">Gift cards</a></li>
@@ -286,10 +287,10 @@
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light text-opacity-50">Corporate Information</a></li>
           </ul>
         </div>
-        <div class="col-md-4 d-flex position-absolute bottom-0">
+        <div class="col-md-4 d-flex flex-column flex-wrap justify-content-start position-absolute bottom-0">
           
-        <button type="button" class="btn btn-outline-light opacity-50 ms-3">Service Code</button>
-        <p class="text-light text-opacity-50 ms-3" href="#">1997-2019 Netflix,inc</p>
+        <button type="button" class="btn btn-outline-light opacity-50 ms-3 d-grid gap-2 col-4 mx-auto mt-2 ">Service Code</button>
+        <p class="text-light text-opacity-50 mt-2" href="#">&copy;1997-2019 Netflix,inc</p>
       </footer>
     </div>
 

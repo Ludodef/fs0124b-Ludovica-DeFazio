@@ -1,5 +1,6 @@
 $border-radius: none;
-
+$btn-border-radius: none;
+$border-radius-sm: none;
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import 'variables.scss';
@@ -22,9 +23,7 @@ body{
     width: 32px;
 }
 
-.icone{
-    color: $colore;
-}
+
 
 .dropdown-menu[data-bs-popper] {
     
@@ -56,4 +55,43 @@ h3{
     margin-top: 20px;
 }
 
+.centro{
+    margin: 0 auto;
+}
 
+.centrato{
+    width: 40%;
+    @extend .centro;
+}
+
+h1{
+    font-size: 4em;
+}
+
+.sinistra{
+    margin-left: 28px;
+}
+
+.piccolina{
+    font-size: 0.6em;
+}
+
+.check{
+border-radius: none;
+background-color: transparent;
+width: 20px;
+height: 20px;
+
+}
+
+.form-check-input{
+    :checked{
+        background-color: none;
+        border-color: none;
+    }
+}
+
+.grassetto{
+    font-weight: 600;
+    font-size: 0.8em;
+}
