@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        class User{
+
+            constructor(_nome,_cognome,_eta,_luogo){
+                this.firstName=_nome;
+                this.lastName= _cognome;
+                this.age= _eta;
+                this.location= _luogo
+            }
+            mostraDettagli(){
+                console.log(`Il nome è ${this.firstName},il cognome è ${this.lastName}, l'ètà è ${this.age},il luogo è ${this.location}`)
+
+            }
+            
+            confrontoEta(persona2){
+                if(this.age > persona2.age)
+                return 'persona 1 è maggiore di persona 2'
+            }
+        }
+
+        
+        let persona1= new User('Ludovica','De Fazio',28,'Soveria Mannelli')
+        let persona2= new User('Pinco','Pallino',18,'Tokyo')
+        persona1.mostraDettagli()
+        persona2.mostraDettagli()
+        console.log(persona1.confrontoEta(persona2))
+    </script>
+</body>
+</html>
