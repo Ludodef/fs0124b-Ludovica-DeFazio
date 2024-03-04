@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <form class="form">
+        <label for="petname" id="nomeanimale">Nome Cucciolo</label>
+        <input type="text">
+        <label for="ownername" id="nomepadrone">Nome Padrone</label>
+        <input type="text">
+
+        <label for="species">Che specie è il tuo cucciolo?</label>
+
+        <select name="specie" id="species">
+          <option value="cane">Cane</option>
+          <option value="gatto">Gatto</option>
+          <option value="uccellino">Uccellino </option>
+          <option value="coniglio">coniglio</option>
+          <option value="altro">Altro</option>
+        </select> 
+
+        <label for="breed">Che razza è il tuo cucciolo?</label>
+
+        <select name="breed" id="breed">
+          <option value="labrador">Labrador</option>
+          <option value="gatto">Soriano</option>
+          <option value="canarino">Canarino </option>
+          <option value="nano">Nano</option>
+          <option value="altro">Altro</option>
+        </select> 
+        <input type="submit" value="Submit">
+    </form>
+
+    <ul id="lista"></ul>
+
+
+
+    <script>
+
+        class Pet{
+            constructor(_petname,_ownername,_species,_breed){
+                this.petName = _petname;
+                this.ownerName= _ownername;
+                this.species = _species;
+                this.breed = _breed;
+            }
+            stessoPadrone(altropet){
+                return this.ownerName == altropet.ownerName
+            }
+        }
+
+        
+        
+
+    </script>
+</body>
+</html>
