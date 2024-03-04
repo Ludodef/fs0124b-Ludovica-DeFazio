@@ -24,14 +24,17 @@
             }
             
             confrontoEta(persona2){
-                if(this.age > persona2.age)
+                if(this.age > persona2.age){
                 return 'persona 1 è maggiore di persona 2'
+            }else{
+                return 'persona 1 è minore di persona 2'
             }
+        }
         }
 
         
         let persona1= new User('Ludovica','De Fazio',28,'Soveria Mannelli')
-        let persona2= new User('Pinco','Pallino',18,'Tokyo')
+        let persona2= new User('Pinco','Pallino',38,'Tokyo')
         persona1.mostraDettagli()
         persona2.mostraDettagli()
         console.log(persona1.confrontoEta(persona2))
