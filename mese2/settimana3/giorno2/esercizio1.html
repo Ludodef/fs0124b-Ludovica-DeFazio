@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="nomeImput">Nome</label>
+        <input type="text" id="nomeImput">
+
+        <button onclick="salvaNome()">Salva</button>
+        <button onclick="eliminaNome()">Elimina</button>
+    </form>
+
+    <p id="mostra">
+
+    </p>
+    <script>
+
+        
+        function salvaNome(){
+            let nome = document.getElementById('nomeImput').value;
+            localStorage.setItem("nome",nome);
+            mostraNome();
+        } 
+
+        
+        function eliminaNome(){
+            localStorage.removeItem("nome")
+            mostraNome()
+        }
+
+        function mostraNome(){
+            let nomeSalvato= localStorage.getItem("nome")
+            let divNome = document.getElementById("mostra")
+            if (nomeSalvato){
+                divNome.innerHTML= `Nome precedentemente salvato: ${nomeSalvato}`;
+            }else{
+                divNome.innerHTML = ""
+            }
+        }
+
+        mostraNome()
+    </script>
+</body>
+</html>
