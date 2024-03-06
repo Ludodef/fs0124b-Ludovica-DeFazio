@@ -37,5 +37,14 @@ fetch('https://striveschool-api.herokuapp.com/books')
         price.classList.add('card-text')
         price.innerText = book.price
         cardBody.appendChild(price)
+
+        let button =document.createElement('a')
+        button.classList.add('btn', 'btn-primary')
+        button.innerText = 'scarta'
+        cardBody.appendChild(button)
+
+        button.addEventListener('click',(el) =>{
+            div.parentNode.removeChild(div)
+        })
     }
 })
