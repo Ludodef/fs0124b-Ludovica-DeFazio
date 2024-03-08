@@ -1,7 +1,7 @@
 let url = new URLSearchParams(location.search)
-        let id = url.get('_id')
+        let id = url.get('id')
 
-
+console.log(id)
 
         fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`,{
             
@@ -11,7 +11,7 @@ let url = new URLSearchParams(location.search)
                   "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZDZkYzJkN2IxMTAwMTkwZTZkZDQiLCJpYXQiOjE3MDk4ODkyNDUsImV4cCI6MTcxMTA5ODg0NX0.qguxaXp5yX1T9XyEZzgCx6nebnvl9aymqglnIEgK6Qk",
             }
         })
-        .then(res => res.json)
+        .then(res => res.json())
         .then(phone =>{
             let nome = document.querySelector('#nome')
             let brand = document.querySelector('#brand')
@@ -27,7 +27,8 @@ let url = new URLSearchParams(location.search)
         })
 
         const salva =  document.querySelector('#salva')
-
+        const elimina = document.querySelector('#elimina')
+console.log(elimina)
 salva.addEventListener('click',function(e){
     e.preventDefault()
 
@@ -61,5 +62,32 @@ salva.addEventListener('click',function(e){
         location.href = 'index.html'
 
     })
-
 })
+
+    elimina.addEventListener('click',function(e){
+        e.preventDefault()
+        
+        fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`,{
+            method:'DELETE',
+            headers:{
+                'Content-type':'application/json',
+                Authorization:
+                "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZDZkYzJkN2IxMTAwMTkwZTZkZDQiLCJpYXQiOjE3MDk4ODkyNDUsImV4cCI6MTcxMTA5ODg0NX0.qguxaXp5yX1T9XyEZzgCx6nebnvl9aymqglnIEgK6Qk",
+            }
+        })
+        .then(res => res.json())
+        .then(_res => {
+            
+            location.href = 'index.html'
+    
+        })
+        })
+
+        
+        
+        
+
+
+   
+
+    

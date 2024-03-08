@@ -24,6 +24,11 @@ fetch("https://striveschool-api.herokuapp.com/api/product/", {
     let image = colonna.querySelector('.card-img-top')
     image.src = phone.imageUrl
 
+    let editBtn = colonna.querySelector('.edit')
+    editBtn.href = `edit.html?id=${phone._id}`
+
+    let moreBtn = colonna.querySelector('.see-more')
+    moreBtn.href = `see-more.html?id=${phone._id}`
     console.log(titolo);
     
     document.querySelector('#attacca').appendChild(colonna)
