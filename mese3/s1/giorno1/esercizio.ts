@@ -15,7 +15,7 @@ class User implements Smartphone{
     nome:string
     cognome:string
     credito:number = 0 
-    numeroChiamate: number=0
+    numeroChiamate: number = 0
  constructor(_nome:string, _cognome:string){
     this.nome=_nome;
     this.cognome= _cognome
