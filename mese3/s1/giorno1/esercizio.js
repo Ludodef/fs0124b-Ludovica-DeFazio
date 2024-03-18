@@ -10,8 +10,9 @@ class User {
         this.credito += ammontare;
     }
     chiamata(minuti) {
-        this.credito - (minuti * 0.20);
-        this.numeroChiamate += 1;
+        let costo = 0.20 * minuti;
+        this.credito -= costo;
+        this.numeroChiamate++;
     }
     get chiama404() {
         return this.credito;
@@ -28,6 +29,7 @@ persona.ricarica(15);
 persona.chiamata(4);
 persona.chiamata(1);
 persona.chiamata(2);
+console.log(persona);
 console.log(persona.chiama404);
 console.log(persona.getNumeroChiamata);
 persona.azzeraChiamate();
