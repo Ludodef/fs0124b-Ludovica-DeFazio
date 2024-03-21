@@ -1,19 +1,7 @@
 
 <div class="container">
-
-  <h1>Post in evidenza</h1>
-<div class="row">
-<div class="col-12">
-  <h2>{{articleArr[4].title}}</h2>
-  <p>{{articleArr[4].body}}</p>
-</div>
-<h2>Ti potrebbe interessare:</h2>
-<div class="col-4" *ngFor="let articolo of postRandom">
-
-  <h2>{{articolo.title}}</h2>
-  <p>{{articolo.body}}</p>
+{{articleArr | json}}
 
 </div>
 
-</div>
-</div>
+

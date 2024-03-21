@@ -15,7 +15,7 @@ constructor(private aricoliSvc:AricoliService){}
 
 
   ngOnInit(){
-    this.aricoliSvc.getActiveArticle().then(res => {
+    this.aricoliSvc.getAllArticle().then(res => {
       this.articleArr=res;
       this.getRandomPost(4)
     }
