@@ -1,5 +1,4 @@
-export interface Articles {
-
+export interface Article {
   id: number
   title: string
   body: string
@@ -7,3 +6,5 @@ export interface Articles {
   tags: string[]
   active: boolean
 }
+
+

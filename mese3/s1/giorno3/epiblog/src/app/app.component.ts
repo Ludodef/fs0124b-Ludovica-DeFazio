@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Articles } from './models/articles';
+import { Jsoncontent } from './models/jsoncontent';
 
 @Component({
   selector: 'app-root',
@@ -8,28 +9,28 @@ import { Articles } from './models/articles';
 })
 export class AppComponent {
   articleArr:Articles[] = [];
+  postRandom:Articles[] = []
 
 
 
 
   ngOnInit(){
     fetch('../assets/db.json')
-    .then(article => article.json())
-    .then(article => this.articleArr = article.posts,)
+    .then(res => res.json())
+    .then((contenutoJson:Jsoncontent) =>{
+    this.articleArr = contenutoJson.posts,
 
+      this.getRandomPost(4)
+    })
   }
 
-  generateRandomNumber(){
-    let index:number = Math.floor(Math.random() + this.articleArr.length)
-    return index
-  }
-
-  randomArray:Articles[] = []
-  generateRandomArray(){
-  for (let i = 0 ; i < 4; i++){
-    this.randomArray.push(this.articleArr[this.generateRandomNumber()])
+  getRandomPost(n:number){
+    for (let index = 0; index < n; index++) {
+      const element = Math.floor(Math.random()* this.articleArr.length)
+      this.postRandom.push(this.articleArr[element])
+    }
   }
 
 
-  }
+
 }
