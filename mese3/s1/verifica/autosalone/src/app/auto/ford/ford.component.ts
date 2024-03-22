@@ -12,7 +12,7 @@ export class FordComponent {
 
   constructor(private carSvc:AutoService){}
 
-  ngOninit(){
+  ngOnInit(){
     this.carSvc.getFordCar().then(res => {
       this.autoArr = res;
     })

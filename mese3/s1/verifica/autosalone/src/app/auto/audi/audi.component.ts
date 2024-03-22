@@ -12,9 +12,10 @@ export class AudiComponent {
 
   constructor(private carSvc:AutoService){}
 
-  ngOninit(){
+  ngOnInit(){
     this.carSvc.getAudiCar().then(res => {
       this.autoArr = res;
+      console.log(this.autoArr)
     })
   }
 }

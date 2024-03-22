@@ -1,3 +1,18 @@
-<p>fiat works!</p>
+<div class="row">
+  <div class="col-4" *ngFor="let auto of autoArr">
+  <div class="card" [ngClass]="{
+    'bg-success': auto.available,
+    'bg-danger': !auto.available}">
 
-{{autoArr| json}}
+    <img src="{{auto.modelImage}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{auto.brand}}</h5>
+      <p class="card-text">{{auto.model}}</p>
+      <p class="card-text">{{auto.price}} €</p>
+
+
+    </div>
+
+  </div>
+  </div>
+</div>
