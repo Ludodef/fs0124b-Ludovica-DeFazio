@@ -41,7 +41,7 @@
       <p class="card-text"> <span class="badge text-bg-info"> {{auto.price | currency: 'EUR'}}</span> </p>
 
       <p class="card-text"> Disponibilita':{{auto.available ? 'Si':'No'}}</p>
-      <a [routerLink]="['/' + auto.brand.toLowerCase()]" class="btn btn-primary">Vedi altro</a>
+      <a [routerLink]="['/auto',auto.id]" class="btn btn-primary">Dettagli Auto</a>
 
     </div>
 

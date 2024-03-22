@@ -25,4 +25,9 @@ export class AutoService {
     return this.getAllCar()
     .then(res => res.filter(c => c.brand === 'Ford'))
   }
+  getAutoById(id:number):Promise<Car | undefined>{
+    return this.getAllCar()
+    .then(res => res.find(c => c.id == id))
+  }
+
 }

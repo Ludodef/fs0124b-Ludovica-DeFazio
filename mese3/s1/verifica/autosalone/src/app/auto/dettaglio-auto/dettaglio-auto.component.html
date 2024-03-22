@@ -1,0 +1,11 @@
+<p>Dovrebbe funzionare ma invece niente</p>
+<div class="col-12"  *ngFor="let auto of autoArr"  [ngClass]="{
+  'bg-success': auto.available,
+  'bg-danger': !auto.available}">
+<img src="{{auto.modelImage}}" alt="">
+<h1>{{auto.brand}}</h1>
+<h2>{{auto.model}}</h2>
+<p>{{auto.year}}</p>
+<p><span class="badge text-bg-info">{{auto.price | currency: 'EUR'}} </span> </p>
+<p> Disponibilita':<span class="fw-bold"> {{auto.available ? 'Si':'No'}}</span></p>
+</div>

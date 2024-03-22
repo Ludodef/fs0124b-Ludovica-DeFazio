@@ -4,6 +4,7 @@ import { HomeComponent } from './auto/home/home.component';
 import { AudiComponent } from './auto/audi/audi.component';
 import { FordComponent } from './auto/ford/ford.component';
 import { FiatComponent } from './auto/fiat/fiat.component';
+import { DettaglioAutoComponent } from './auto/dettaglio-auto/dettaglio-auto.component';
 
 const routes: Routes = [
 
@@ -14,6 +15,10 @@ const routes: Routes = [
   {
     path:'audi',
     component:AudiComponent,
+  },
+  {
+    path:'auto/:id',
+    component: DettaglioAutoComponent
   },
   {
     path:'ford',
