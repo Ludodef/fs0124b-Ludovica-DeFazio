@@ -1,2 +1,32 @@
-<p>home works!</p>
-{{autoArr | json}}
+<div class="row">
+  <h2>I nostri marchi:</h2>
+  <div class="col-3">
+   <img class="logo" src="../assets/loghi/audi.png" alt="">
+  </div>
+  <div class="col-3">
+    <img class="logo" src="../assets/loghi/fiat logo.png" alt="">
+  </div>
+  <div class="col-3">
+    <img class="logo" src="../assets/loghi/ford.png" alt="">
+  </div>
+</div>
+
+
+
+
+<div class="row">
+  <div class="col-4" *ngFor="let auto of autoRandom">
+  <div class="card" [ngClass]="{
+    'bg-success': auto.available,
+    'bg-danger': !auto.available}">
+
+    <img src="{{auto.modelImage}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{auto.brand}}</h5>
+      <p class="card-text">{{auto.model}}</p>
+      <p class="card-text">{{auto.price}} €</p>
+    </div>
+
+  </div>
+  </div>
+</div>
