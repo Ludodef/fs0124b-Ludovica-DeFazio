@@ -1,14 +1,17 @@
-<div class="row">
-  <div class="col-4" *ngFor="let auto of autoArr">
+
+<h2 class="fw-bold">Le nostre Fiat</h2>
+<div class="row justify-content-center align-items-center">
+  <div class="col-6" *ngFor="let auto of autoArr">
   <div class="card" [ngClass]="{
     'bg-success': auto.available,
     'bg-danger': !auto.available}">
 
     <img src="{{auto.modelImage}}" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">{{auto.brand}}</h5>
+      <h5 class="card-title fw-bold">{{auto.brand}}</h5>
       <p class="card-text">{{auto.model}}</p>
-      <p class="card-text">{{auto.price}} €</p>
+      <p class="card-text"> <span class="badge text-bg-info">{{auto.price | currency: 'EUR'}}</span></p>
+      <p class="card-text"> Disponibilita':<span class="fw-bold">{{auto.available ? 'Si':'No'}}</span> </p>
 
 
     </div>

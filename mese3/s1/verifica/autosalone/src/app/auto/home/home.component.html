@@ -37,7 +37,9 @@
     <div class="card-body">
       <h5 class="card-title fw-bold">{{auto.brand}}</h5>
       <p class="card-text">{{auto.model}}</p>
-      <p class="card-text"> <span class="badge text-bg-info"> {{auto.price}} €</span> </p>
+      <p class="card-text"> <span class="badge text-bg-info"> {{auto.price | currency: 'EUR'}}</span> </p>
+
+      <p class="card-text"> Disponibilita':{{auto.available ? 'Si':'No'}}</p>
       <a [routerLink]="['/' + auto.brand.toLowerCase()]" class="btn btn-primary">Vedi altro</a>
 
     </div>
