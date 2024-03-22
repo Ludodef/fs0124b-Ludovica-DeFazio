@@ -1,11 +1,19 @@
-<p>Dovrebbe funzionare ma invece niente</p>
-<div class="col-12"  *ngFor="let auto of autoArr"  [ngClass]="{
-  'bg-success': auto.available,
-  'bg-danger': !auto.available}">
-<img src="{{auto.modelImage}}" alt="">
-<h1>{{auto.brand}}</h1>
-<h2>{{auto.model}}</h2>
-<p>{{auto.year}}</p>
-<p><span class="badge text-bg-info">{{auto.price | currency: 'EUR'}} </span> </p>
-<p> Disponibilita':<span class="fw-bold"> {{auto.available ? 'Si':'No'}}</span></p>
+<div class="container">
+<div class="card mb-3 border-primary">
+  <div class="row g-0">
+    <div class="col-md-3 adjust">
+      <img src="{{autoArr?.modelImage}}" class="img-fluid rounded-start d-none d-md-block" alt="...">
+    </div>
+    <div class="col-md-2 ">
+      <div class="card-body">
+        <h1 class="card-title">{{autoArr?.brand}}</h1>
+        <h2 class="card-text fw-bold">{{autoArr?.model}}</h2>
+        <p class="card-text">{{autoArr?.year}}</p>
+        <p class="card-text"><span class="badge text-bg-info">{{autoArr?.price| currency: 'EUR'}} </span> </p>
+        <p class="card-text"> Disponibilita':<span class="fw-bold"> {{autoArr?.available ? 'Si':'No'}}</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
 </div>

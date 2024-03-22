@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Car } from '../../Models/car';
+import { AutoService } from '../../auto.service';
 
 @Component({
   selector: 'app-dettaglio-auto',
@@ -8,21 +9,16 @@ import { Car } from '../../Models/car';
   styleUrl: './dettaglio-auto.component.scss'
 })
 export class DettaglioAutoComponent {
-autoArr:Car[] = []
-  carSvc: any;
+autoArr:Car | undefined
 
-  constructor(private router:ActivatedRoute){}
+  constructor(private router:ActivatedRoute ,private carSvc:AutoService){}
+
 
   ngOnInit(){
 
-    this.carSvc.getAutoById().then((res: Car[]) => {
-      this.autoArr = res ;
-      })
+
     this.router.params.subscribe((parametriDellaRotta:any) => {
-
-
-
-console.log(parametriDellaRotta.id);
+     this.carSvc.getAutoById(parametriDellaRotta.id).then(res => this.autoArr = res)
     })
 }
 }
