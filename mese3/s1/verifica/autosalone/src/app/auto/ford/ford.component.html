@@ -9,6 +9,7 @@
     <img src="{{auto.modelImage}}" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title fw-bold">{{auto.brand}}</h5>
+      <p class="card-text">{{auto.year}}</p>
       <p class="card-text">{{auto.model}}</p>
       <p class="card-text"><span class="badge text-bg-info">{{auto.price | currency: 'EUR'}} </span> </p>
       <p class="card-text"> Disponibilita':<span class="fw-bold"> {{auto.available ? 'Si':'No'}}</span></p>
