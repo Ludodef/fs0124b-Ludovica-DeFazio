@@ -15,14 +15,11 @@ todoArr: Todo[] = []
 utenti?: Utenti
 
 
+
 constructor(private todosvc:TodoService){}
 
 ngOnInit(){
 this.todoArr = this.todosvc.getAllTodo()
-
-
-  this.utenti = this.todosvc.getUserByTodoId(this.todoArr.id)
-
 
 }
 }
