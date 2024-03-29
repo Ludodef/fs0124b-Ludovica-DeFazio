@@ -7,6 +7,7 @@ import { HeaderComponent } from './main-component/header/header.component';
 import { HomeComponent } from './componenti-principali/home/home.component';
 import { CompletatiComponent } from './componenti-principali/completati/completati.component';
 import { UtentiComponent } from './componenti-principali/utenti/utenti.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { UtentiComponent } from './componenti-principali/utenti/utenti.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

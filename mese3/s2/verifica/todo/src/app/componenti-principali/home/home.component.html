@@ -1,1 +1,22 @@
-<p>home works!</p>
+<h1>Lista di cose da fare:</h1>
+
+<div class="row my-0">
+
+<div class="col-6">
+
+
+<form *ngFor="let todos of todoArr"  [ngClass]="
+
+{'alert':true,
+'alert-success': todos.completed,
+ 'alert-danger' : !todos.completed
+ }">
+<input type="checkbox" id="todo" class="form-control" >
+<label for="todo">{{todos.todo}}</label>
+<p>Assigned to:</p>
+</form>
+
+
+</div>
+
+</div>
