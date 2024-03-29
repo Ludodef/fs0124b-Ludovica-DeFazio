@@ -4,6 +4,7 @@ import { Utenti } from '../../Models/utenti';
 import { TodoService } from '../../todo.service';
 import { UtentiService } from '../../utenti.service';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -11,10 +12,17 @@ import { UtentiService } from '../../utenti.service';
 })
 export class HomeComponent {
 todoArr: Todo[] = []
-utentiArr : Utenti[] = []
+utenti?: Utenti
 
-constructor(private todosvc:TodoService, private utentisvc:UtentiService){
+
+constructor(private todosvc:TodoService){}
+
+ngOnInit(){
 this.todoArr = this.todosvc.getAllTodo()
-this.utentiArr = this.utentisvc.getAllUtenti()
+
+
+  this.utenti = this.todosvc.getUserByTodoId(this.todoArr.id)
+
+
 }
 }

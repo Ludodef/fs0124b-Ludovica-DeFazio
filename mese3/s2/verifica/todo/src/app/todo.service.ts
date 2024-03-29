@@ -1,10 +1,13 @@
+import { UtentiService } from './utenti.service';
 import { Injectable } from '@angular/core';
 import { Todo } from './Models/todo';
+import { Utenti } from './Models/utenti';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TodoService {
+constructor(private utentiSvc:UtentiService){}
 
   toDo:Todo[] =
   [
@@ -910,8 +913,15 @@ export class TodoService {
     }
   ]
 
+
   getAllTodo() : Todo[]{
     return this.toDo
   }
-
+  getAllCompleted() :Todo[]{
+    return this.toDo.filter((todos) => todos.completed == true)
+  }
+  getUserByTodoId(todoId: number): Utenti | undefined {
+    const todo = this.toDo.find((todos) => todos.id === todoId);
+    return this.utentiSvc.utenti.find((utente) => utente.id === todo?.userId);
+  }
 }

@@ -1,1 +1,21 @@
-<p>completati works!</p>
+<div class="row my-0">
+
+  <div class="col-6">
+
+
+  <form *ngFor="let todos of todoArr" class="form-check" [ngClass]="
+  {'alert':true,
+  'alert-success': todos.completed,
+   'alert-danger' : !todos.completed
+   }">
+  <input type="checkbox" id="todo" class="form-check-input ms-1 p-2" >
+  <div>
+  <label for="todo" class="form-check-label ms-3">{{todos.todo}}</label>
+  <p>Assigned to:</p>
+  </div>
+  </form>
+
+
+  </div>
+
+  </div>

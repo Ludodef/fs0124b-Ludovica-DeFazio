@@ -5,14 +5,13 @@
 <div class="col-6">
 
 
-<form *ngFor="let todos of todoArr"  [ngClass]="
-
+<form *ngFor="let todos of todoArr" class="form-check" [ngClass]="
 {'alert':true,
 'alert-success': todos.completed,
  'alert-danger' : !todos.completed
  }">
-<input type="checkbox" id="todo" class="form-control" >
-<label for="todo">{{todos.todo}}</label>
+<input type="checkbox" id="todo" class="form-check-input ms-1 p-2" appCheckTodo >
+<label for="todo" class="form-check-label ms-3">{{todos.todo}}</label>
 <p>Assigned to:</p>
 </form>
 
