@@ -19,7 +19,4 @@ export class CompletatiComponent {
 
     this.todoArr = this.todosvc.getAllCompleted()
   }
-  checkedTodo(id:number){
-    this.todosvc.checkedTodo(id)
-    }
 }

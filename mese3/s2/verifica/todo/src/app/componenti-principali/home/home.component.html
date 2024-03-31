@@ -5,14 +5,14 @@
     <h1>Lista di cose da fare:</h1>
 
 
-  <div *ngFor="let todos of todoArr" (click)="checkedTodo(todos.id)" [ngClass]="
+  <div *ngFor="let todos of todoArr" [ngClass]="
 {'alert':true,
 'alert-success': todos.completed,
 'alert-danger' : !todos.completed
 }">
   <input type="checkbox" id="todo" class="form-check-input ms-1 p-2"  [(ngModel)]="todos.completed">
   <label for="todo" class="form-check-label ms-3">{{todos.todo}}</label>
-  <p>Assigned to:</p>
+  <p>Assigned to: {{todos.userId}}</p>
 </div>
 
 </div>

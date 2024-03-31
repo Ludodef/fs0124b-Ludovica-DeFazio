@@ -23,10 +23,5 @@ this.todoArr = this.todosvc.getAllTodo()
 this.utenti = this.utentisvc.getAllUtenti()
 }
 
-checkedTodo(id:number){
-this.todosvc.checkedTodo(id)
-}
-
-
 }
 

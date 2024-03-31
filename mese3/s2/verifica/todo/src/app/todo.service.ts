@@ -925,10 +925,5 @@ constructor(private utentiSvc:UtentiService){}
     const todo = this.toDo.find((todos) => todos.id === todoId);
     return this.utentiSvc.utenti.find((utente) => utente.id === todo?.userId);
   }
-  checkedTodo(id:number){
-    const check = this.toDo.find(todo => todo.id === id)
-    if(check){
-      check.completed = !check.completed
-    }
-  }
+
 }
