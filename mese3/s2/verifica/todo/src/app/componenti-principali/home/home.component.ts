@@ -12,14 +12,19 @@ import { UtentiService } from '../../utenti.service';
 })
 export class HomeComponent {
 todoArr: Todo[] = []
-utenti?: Utenti
+utenti: Utenti[] = []
 
 
 
-constructor(private todosvc:TodoService){}
+constructor(private todosvc:TodoService , private utentisvc: UtentiService){}
 
 ngOnInit(){
 this.todoArr = this.todosvc.getAllTodo()
+this.utenti = this.utentisvc.getAllUtenti()
 
 }
+checkedTodo(id:number){
+this.todosvc.checkedTodo(id)
 }
+}
+

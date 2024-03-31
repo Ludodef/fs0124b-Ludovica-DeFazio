@@ -8,7 +8,7 @@ import { HomeComponent } from './componenti-principali/home/home.component';
 import { CompletatiComponent } from './componenti-principali/completati/completati.component';
 import { UtentiComponent } from './componenti-principali/utenti/utenti.component';
 import { FormsModule } from '@angular/forms';
-import { CheckTodoDirective } from './check-todo.directive';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { CheckTodoDirective } from './check-todo.directive';
     HomeComponent,
     CompletatiComponent,
     UtentiComponent,
-    CheckTodoDirective
+
   ],
   imports: [
     BrowserModule,
