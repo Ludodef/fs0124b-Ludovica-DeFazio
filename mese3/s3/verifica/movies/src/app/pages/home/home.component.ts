@@ -16,7 +16,7 @@ export class HomeComponent {
 
   constructor(private http:HttpClient, private movieSvc:MoviesService, private router:Router ){}
   ngOnInit(){
-    this.http.get('http://localhost:3000/users').subscribe()
+
 
     this.movieSvc.$movie.subscribe(movies =>{
       this.movieArr = movies

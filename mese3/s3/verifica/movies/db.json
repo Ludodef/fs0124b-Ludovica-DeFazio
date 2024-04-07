@@ -17,6 +17,12 @@
       "password": "$2a$10$iGI6D6nQis3O/1yF01h4OuJjw2EFii6qNeflkOOscZnZ262o8hCsy",
       "name": "Gina",
       "id": 3
+    },
+    {
+      "email": "giovanni@mucciaccia.it",
+      "password": "$2a$10$myGY1dHX2eCWxhyOukcRX.ITMCaaEeqsLp8SbrftW77o4uejH63L6",
+      "name": "Giovanni",
+      "id": 4
     }
   ],
   "movies-popular": [

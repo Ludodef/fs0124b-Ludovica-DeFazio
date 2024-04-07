@@ -13,7 +13,7 @@ export class UtentiComponent {
 
   constructor(private userSvc:UtentiService){}
 
-  onOnInit(){
+  ngOnInit(){
     this.userSvc.user$.subscribe(users =>{
       this.userArr = users
     }
