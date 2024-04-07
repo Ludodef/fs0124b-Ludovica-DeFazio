@@ -18,9 +18,9 @@ export class AuthInterceptor implements HttpInterceptor {
     const accessToken = this.authSvc.getAccessToken()
 
     const newRequest = request.clone({
-      headers:request.headers.append('Authorization','Bearer '+ )
+      headers:request.headers.append('Authorization','Bearer '+ accessToken )
     })
 
-    return next.handle(request);
+    return next.handle(newRequest);
   }
 }

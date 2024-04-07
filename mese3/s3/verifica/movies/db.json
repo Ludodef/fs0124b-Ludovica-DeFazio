@@ -11,6 +11,12 @@
       "password": "$2a$10$WcwTTiraYlIHE001d7NszusgG42uRp0NxedHXNaURsrMDb5uEjcjm",
       "name": "Maria",
       "id": 2
+    },
+    {
+      "email": "gina@lollobrigida.it",
+      "password": "$2a$10$iGI6D6nQis3O/1yF01h4OuJjw2EFii6qNeflkOOscZnZ262o8hCsy",
+      "name": "Gina",
+      "id": 3
     }
   ],
   "movies-popular": [
