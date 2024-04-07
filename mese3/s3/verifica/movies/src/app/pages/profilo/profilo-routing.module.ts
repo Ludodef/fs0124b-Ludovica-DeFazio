@@ -2,7 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProfiloComponent } from './profilo.component';
 
-const routes: Routes = [{ path: '', component: ProfiloComponent }];
+const routes: Routes = [
+  {
+    path: '',
+    component: ProfiloComponent,
+    title:'Profilo'
+  }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

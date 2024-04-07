@@ -1,1 +1,20 @@
-<p>login works!</p>
+
+<h1>Accedi</h1>
+<div class="container pt-3">
+
+  <div class="row">
+
+    <div class="col-6">
+<form>
+
+
+  <input type="email" name="email" [(ngModel)]="loginData.email" class="form-control m-3" placeholder="Email">
+  <input type="password" name="password" [(ngModel)]="loginData.password" class="form-control m-3" placeholder="Password">
+
+  <button (click)="signIn()" class="btn btn-primary m-3">Accedi</button>
+</form>
+</div>
+
+</div>
+
+</div>

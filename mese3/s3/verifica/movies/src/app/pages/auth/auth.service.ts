@@ -21,7 +21,8 @@ export class AuthService {
   authSubject = new BehaviorSubject<IUsers|null>(null)
 
   user$= this.authSubject.asObservable()
-  isLoggedIn$ = this.user$.pipe(map(user => !!user))
+  isLoggedIn$ = this.user$.pipe(map(user => !!user), tap(user => this.syncIsLoggedIn = user))
+  syncIsLoggedIn = false
 
   constructor(private http:HttpClient, private router:Router) {
 
@@ -54,6 +55,15 @@ export class AuthService {
     setTimeout(() => {
       this.logout()
     },expMs)
+  }
+
+  getAccessToken():string{
+    const userJson = localStorage.getItem('accessData')
+    if(!userJson) return '';
+    const accessData:AccessData = JSON.parse(userJson)
+    if(this.jwtHelper.isTokenExpired(accessData.accessToken)) return ''
+    return accessData.accessToken
+
   }
 
   register(newUser:Partial<IUsers>):Observable<AccessData>{
